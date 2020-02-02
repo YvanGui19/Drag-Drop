@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://source.unsplash.com/random/150x150');
+    background-image: url('../img/balloon150.png');
     width: 150px;
     height: 150px;
     cursor: pointer;
@@ -37,6 +37,7 @@ body {
     background: rgb(180, 180, 180);
     border-color: rgb(150, 150, 150);
     border-radius: 100px;
+    opacity: 0.80;
   }
   
   
