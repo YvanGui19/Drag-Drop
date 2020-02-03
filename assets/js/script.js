@@ -1,17 +1,15 @@
 const fill = document.querySelector('.fill'); //élément de base
-const empties = document.querySelectorAll('.empty'); 
+const empties = document.querySelectorAll('.empty'); //élément vide
 
 fill.addEventListener('dragstart', dragStart);
 fill.addEventListener('dragend', dragEnd);
 
-for (const empty of empties) {
+for (const empty of empties) { //variable d'action entre chaque empties
   empty.addEventListener('dragover', dragOver);
   empty.addEventListener('dragenter', dragEnter);
   empty.addEventListener('dragleave', dragLeave);
   empty.addEventListener('drop', dragDrop);
 }
-
-// Drag Functions
 
 function dragStart() {
   this.className += ' hold'; //tant que c'est tenu
@@ -22,20 +20,20 @@ function dragEnd() {
   this.className = 'fill'; //dès que l'on va lâcher en dehors de la base il retrouve la class de base "fill"
 }
 
-function dragOver(e) {
+function dragOver(e) { //au déplacement de l'élément
   e.preventDefault();
 }
 
-function dragEnter(e) {
+function dragEnter(e) {  //à l'entré dans une zone droppable
   e.preventDefault();
   this.className += ' hovered';
 }
 
-function dragLeave() {
+function dragLeave() { //sort d'une zone droppable
   this.className = 'empty';
 }
 
-function dragDrop() {
+function dragDrop() { //lorsque l'on lache l'élément
   this.className = 'empty';
   this.append(fill);
 }

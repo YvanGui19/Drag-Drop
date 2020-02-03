@@ -20,6 +20,7 @@ body {
   .hold {
     border: solid 5px white;
     border-radius: 100px;
+    opacity: 0.90;
   }
   
   .empty {
