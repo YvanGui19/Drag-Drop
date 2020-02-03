@@ -7,24 +7,70 @@
 	<title>Drag&Drop</title>
     <!--     CSS     -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
     
 </head>
 <body>
-	<div class="empty">
-        <div class="fill" draggable="true"></div>
-      </div>
-    
-      <div class="empty">
-      </div>
-    
-      <div class="empty">
-      </div>
-    
-      <div class="empty">
-      </div>
+  <header class="flex-row">
+    <h1> - LE DRAG N DROP -</h1>
+    <nav>
+      <ul class="flex-row">
+        <a href="#historique"><li>Historique</li></a>
+        <a href="#définition"><li>Définition</li></a>
+        <a href="#documentation"><li>Documentation</li></a>
+        <a href="#démonstration"><li>Démonstration</li></a>
+      </ul>
+    </nav>
+  </header>
 
-      <!--     JS     -->
-      <script src="assets/js/script.js"></script>
+  <main class="master">
+    <div id="historique"></div>
+    <section class="story">
+      
+        <h2>Historique</h2>
+        <p>
+          Cette technique a été imaginé par Xerox puis développé et mise en service par Apple pour un de ses premiers ordinateurs lancé en 1983.
+Système 7, sorti en 1991, est le premier système d’exploitation d’APPLE à avoir introduit cette méthode.Donnant la possibilité à l’utilisateur d’ouvrir un document
+en déposant simplement l’icône de celui-ci sur l’icône de l’application.
+        </p>
+    </section>
+    <div id="définition"></div>
+    <section class="definition">
+      
+      <h2>Définition</h2>
+        <p>
+          Dans une interface graphique, une méthode consistant à utiliser une souris, pavé ou écran, pour déplacer d'un endroit à un autre un élément graphique présent sur l'écran d'un smartphone, tablette ou ordinateur.
+        </p>
+      </section>
+      <div id="documentation"></div>
+      <section class="documentation"> 
+        
+        <h2>Documentation</h2>
+        <p>
+          L'interface HTML Drag and Drop (pour glisser-déposer) permet à des applications d'utiliser des fonctionnalités de glisser-déposer dans le navigateur. L'utilisateur pourra sélectionner des éléments déplaçables à la souris et les déplacer vers un élément où on peut déposer en relâchant le bouton de la souris. Une représentation translucide de l'élément déplacé suit le pointeur lors de l'opération.
+Pour les sites web et les extensions, on peut personnaliser les éléments qui peuvent être déplacés, la façon dont ceux-ci sont signalés et les éléments qui peuvent servir de destination.
+L'aperçu de cette API inclut une description des interfaces, les étapes à suivre pour prendre en charge ces fonctionnalités dans une application et un aperçu de l'interopérabilité de ces interfaces.
+        </p>
+      </section>
+      <div id="démonstration"></div>
+    <section class="dragndrop flex-row">
+      
+	  <div class="empty">
+      <div class="fill" draggable="true"></div>
+    </div>
+    <div class="empty">
+    </div>
+    
+    <div class="empty">
+    </div>
+    
+    <div class="empty">
+    </div>
+  </section>
+  </main>
+  
+  <!--     JS     -->
+  <script src="assets/js/script.js"></script>
 
 </body>
 </html>

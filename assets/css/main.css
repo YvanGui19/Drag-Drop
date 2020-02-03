@@ -1,43 +1,121 @@
+*{margin:0;padding:0}
+header{justify-content: space-around}
+header nav ul li, header h1 {margin: 20px;}
+.flex-row{display:flex;flex-direction:row; flex-wrap: wrap}
+.flex-column{display:flex;flex-direction:column;}
+
+
 body {
-    background: teal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    
     height: 100vh;
   }
+
+
+ul.flex-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+h2{
+  text-align: center;
+}
+.master{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dragndrop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/balloon150.png');
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.hold {
+  border: solid 5px white;
+  border-radius: 100px;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  background: white;
+  border-radius: 100px;
+}
+
+.hovered {
+  background: rgb(180, 180, 180);
+  border-color: rgb(150, 150, 150);
+  border-radius: 100px;
+  opacity: 0.80;
+}
+
+section.story{
+  background-color: rgba(179, 177, 177, 0.577);
+  border-radius: 10px;
+}
+
+section.documentation{
+  background-color: rgba(179, 177, 177, 0.577);
+  border-radius: 10px;
+}
+
+section.definition{
+  background-color: rgba(179, 177, 177, 0.577);
+  border-radius: 10px;
+}
+
+section.dragndrop.flex-row{
+  background-color: rgba(179, 177, 177, 0.577);
+  border-radius: 10px;
+}
+
+section{
+  margin:50px
+}
+
+
+main{
+  width: 100%;
+}
+
+section{
+  width: 75%;
+}
+
+p{
+  margin: 30px;
   
-  .fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/balloon150.png');
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    border-radius: 100px;
-  }
-  
-  .hold {
-    border: solid 5px white;
-    border-radius: 100px;
-  }
-  
-  .empty {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 160px;
-    width: 160px;
-    margin: 10px;
-    background: white;
-    border-radius: 100px;
-  }
-  
-  .hovered {
-    background: rgb(180, 180, 180);
-    border-color: rgb(150, 150, 150);
-    border-radius: 100px;
-    opacity: 0.80;
-  }
-  
+}
+
+li:hover{
+  background: rgba(3, 150, 150, 0.256);
+  cursor: pointer;
+  border-radius: 5px;
+ 
+}
+
+a{
+  text-decoration: none;
+  color:rgb(55, 54, 53) ;
+}
   
