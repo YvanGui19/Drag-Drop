@@ -7,9 +7,18 @@ header nav ul li, header h1 {margin: 20px;}
 
 body {
     font-family: 'Roboto Slab', serif;
-    
     height: 100vh;
   }
+
+
+main{
+  width: 100%;
+}
+
+section{
+  width: 75%;
+}
+
 
 
 ul.flex-row{
@@ -85,7 +94,6 @@ section.definition{
 }
 
 section.dragndrop.flex-row{
-  background-color: rgba(179, 177, 177, 0.577);
   border-radius: 10px;
 }
 
@@ -93,14 +101,6 @@ section{
   margin:50px
 }
 
-
-main{
-  width: 100%;
-}
-
-section{
-  width: 75%;
-}
 
 p{
   margin: 30px;
@@ -118,4 +118,8 @@ a{
   text-decoration: none;
   color:rgb(55, 54, 53) ;
 }
+
+.empty{
   
+  background-color: rgba(85, 85, 85, 0.577)
+}
